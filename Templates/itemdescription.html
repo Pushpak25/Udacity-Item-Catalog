@@ -1,0 +1,17 @@
+{% extends "main.html" %} {% block content %}
+<h1>
+    {{categoryItem.title}}
+</h1>
+<p>
+    {{categoryItem.description}}
+</p>
+
+<a href="{{url_for('editCategoryItem',category_id = categoryItem.category.id,item_id = categoryItem.id)}}">
+    <button class=" btn btn-default edit ">
+		<span class="glyphicon glyphicon-ok " aria-hidden="true "></span> Edit </button>
+</a>
+<a href="{{url_for('deleteItem',category_id = categoryItem.category.id,item_id = categoryItem.id)}}">
+    <button class=" btn btn-default delete ">
+		<span class="glyphicon glyphicon-remove " aria-hidden="true "></span> Delete </button>
+</a>
+{% endblock %}
