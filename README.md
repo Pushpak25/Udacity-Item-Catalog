@@ -21,7 +21,7 @@ To use the Vagrant virtual machine, then use the command <br/>
 ```vagrant up``` (powers on the virtual machine) 
 followed by <br/>
 ```vagrant ssh``` (logs into the virtual machine).
-Find the catalog folder and replace it with the content of this current repository. Navigate to the catalog folder using
+Find the catalog folder and replace it with the content of this current repository. Navigate to the catalog folder using <br/>
 ```cd /vagrant/catalog/``` 
 <br/>
 
